@@ -1,0 +1,91 @@
+@import "variable.scss";
+
+@media only screen and (max-width:1140px) {
+   
+    .seacrhContent{
+      table{
+        width: 95%;
+        height: 100%;
+      }
+    }
+    .sidebar
+    {
+
+        width: 23%;
+        padding: 1rem;
+
+        >h2{
+            font-size: 1.1rem;
+        }
+        input{
+            width: 100%;
+        }
+    }
+  .main-1{
+    .Search-bar{
+        >input{
+         width: 60%;
+        }
+         }
+  }
+
+
+}
+
+@media only screen and (max-width:700px){
+  .sidebar{
+    display: none;
+  }
+  .main-1{
+    width: 100%;
+    .Search-bar{
+      >input{
+       width: 100%;
+
+      }
+      svg{
+        margin-left: -2rem;
+       
+    }
+    }
+
+  }
+  .mobileShow{
+    display: block;
+    position: absolute;
+    top:1%;
+    left: 1%;
+    svg{
+      font-size: 1.5rem;
+      color: $color4;
+    }
+  }
+.show-mobile-sidebar{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color:  #fffdfd;;
+  height: 100vh;
+  width: 50%;
+  border: none;
+  transition: all 0.3s linear;
+  z-index: 99;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.455);
+
+  ul{
+    transition-delay: 0.2s;
+  }
+
+}
+.seacrhContent{
+table{
+  width: 100%;
+}
+} 
+
+.pagination{
+padding: 1rem 0rem;
+padding-bottom: 2rem;
+}
+}
