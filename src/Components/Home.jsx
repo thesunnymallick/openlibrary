@@ -20,7 +20,7 @@ function Home() {
       const fetchBooks = async () => {
 
          try {
-            const { data } = await axios.get(`https://openlibrary.org/search.json?title=${input}`);
+            const { data } = await axios.get(`https://openlibrary.org/search.json?q=${input}`);
             setBooks(data.docs)
             setLoading(false);
          }

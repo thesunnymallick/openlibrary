@@ -20,7 +20,7 @@ function Subject() {
   useEffect(() => {
     const fetchBooks = async () => {
       try{
-        const { data } = await axios.get(`https://openlibrary.org/search.json?title=${input}`)
+        const { data } = await axios.get(`https://openlibrary.org/search.json?q=${input}`)
         setSubject(data.docs)
         setLoading(false)
       }
